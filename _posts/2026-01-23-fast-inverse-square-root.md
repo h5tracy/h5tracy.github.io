@@ -102,3 +102,12 @@ $$
 $$
 
 令 $f(y) = \frac{1}{y^2} - x$ ，得
+
+```mermaid
+flowchart TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+```
