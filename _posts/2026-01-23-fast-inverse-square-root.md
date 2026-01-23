@@ -1,4 +1,4 @@
-# 平方根倒数速算法1
+# 平方根倒数速算法
 
 《雷神之锤III竞技场》的 [源代码](https://github.com/id-Software/Quake-III-Arena/blob/dbe4ddb10315479fc00086f08e25d968b4b43c49/code/game/q_math.c#L549-L572) ：
 
@@ -27,7 +27,7 @@ $$
 \vec x = [s, \underbrace{e_{k-1}, \dots, e_1, e_0}_\text{exp}, \underbrace{f_{n-1}, \dots, f_1, f_0}_\text{frac}]
 $$
 
-在单精度浮点格式中， \\(k = 8\\) 、 \\(n = 23\\) 。
+在单精度浮点格式中， $k = 8$ 、 $n = 23$ 。
 在双精度浮点格式中， $k = 11$ 、 $n = 52$ 。
 
 IEEE 浮点标准用 $V = (-1)^s \times M \times 2^E$ 的形式来表示一个数。
@@ -78,13 +78,12 @@ $$
 其中, $R = \text{0x5f3759df}$ 。
 [McEniry](https://0x5f37642f.com/documents/McEniryMathematicsBehind.pdf) 认为，这一常数最初或许便是以“在可容忍误差范围内使用二分法”的方式求得。
 
-::: info
-对向量 $\vec x = [x_{w-1}, x_{w-2}, \dots, x_0]$ ：
 
-$$ \text{B2T}_w(\vec x) \doteq -x_{w-1} 2^{w-1} + \sum_{i=0}^{w-2} x_i 2^i $$
-
-最高有效位 $x_{w-1}$ 也称为 *符号位* ，它的“权重”为 $-2^{w-1}$ ，是无符号表示中权重的负数。
-:::
+> 对向量 $\vec x = [x_{w-1}, x_{w-2}, \dots, x_0]$ ：
+>
+> $$ \text{B2T}_w(\vec x) \doteq -x_{w-1} 2^{w-1} + \sum_{i=0}^{w-2} x_i 2^i $$
+>
+> 最高有效位 $x_{w-1}$ 也称为 *符号位* ，它的“权重”为 $-2^{w-1}$ ，是无符号表示中权重的负数。
 
 ## 牛顿法
 
