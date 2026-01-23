@@ -1,4 +1,6 @@
-# 平方根倒数速算法
+---
+title: 平方根倒数速算法
+---
 
 《雷神之锤III竞技场》的 [源代码](https://github.com/id-Software/Quake-III-Arena/blob/dbe4ddb10315479fc00086f08e25d968b4b43c49/code/game/q_math.c#L549-L572) ：
 
