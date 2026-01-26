@@ -103,6 +103,14 @@ $$
 
 令 $f(y) = \frac{1}{y^2} - x$ ，得
 
+$$
+\begin{align}
+y_{n+1}
+  &= \frac{1}{{y_n}^2} \\
+  &= 2
+\end{align}
+$$
+
 ```mermaid
 flowchart TD
     A[Christmas] -->|Get money| B(Go shopping)
