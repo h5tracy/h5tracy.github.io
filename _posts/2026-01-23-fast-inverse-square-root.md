@@ -103,6 +103,8 @@ $$
 
 令 $f(y) = \frac{1}{y^2} - x$ ，得
 
+{% raw %}
+
 $$
 \begin{align}
 y_{n+1}
@@ -110,6 +112,8 @@ y_{n+1}
   &= 2
 \end{align}
 $$
+
+{% endraw %}
 
 ```mermaid
 flowchart TD
