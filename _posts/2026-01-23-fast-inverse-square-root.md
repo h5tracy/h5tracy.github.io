@@ -39,7 +39,7 @@ IEEE 浮点标准用 $V = (-1)^s \times M \times 2^E$ 的形式来表示一个�
 
 $$
 \begin{align}
-  M &= 1 . f_{n-1} \dots f_1 f_0 \\
+  M &= {1 . f_{n-1} \dots f_1 f_0}_2 \\
     &= 1 + f
 \end{align}
 $$
