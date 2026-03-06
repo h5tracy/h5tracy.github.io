@@ -146,9 +146,9 @@ flowchart TD
 
 
 $$
-\begin{array}{llll}
+\begin{matrix}
 a & b & c & a & b & c & a & c & a & b \\
 b & a & b & c & b & a & b & c & a & b & c & a & a & b & c & a & b & c & a & b & c & a & c & a & b & c \\
-&& \uparrow
-\end{array}
+\uparrow
+\end{matrix}
 $$
